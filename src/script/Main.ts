@@ -27,6 +27,7 @@ const start = () => {
         brush.down(x , y)
     })
     canvas.addEventListener('touchmove' , (e:TouchEvent) =>{
+        e.preventDefault()
         const touchObject = e.touches[0]
         const [x,y] = getAdjustedPosition(touchObject.pageX, touchObject.pageY, canvas)
         brush.move(x , y)
