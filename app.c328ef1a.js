@@ -304,6 +304,7 @@ var start = function start() {
     brush.down(x, y);
   });
   canvas.addEventListener('touchmove', function (e) {
+    e.preventDefault();
     var touchObject = e.touches[0];
 
     var _a = util_1.getAdjustedPosition(touchObject.pageX, touchObject.pageY, canvas),
@@ -384,7 +385,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59621" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56233" + '/');
 
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
