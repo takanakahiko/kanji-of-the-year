@@ -1,0 +1,29 @@
+{
+  "name": "kanji-of-the-year",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel ./src/index.html",
+    "build": "parcel build ./src/index.html",
+    "serve": "static-server ./dist",
+    "build:gh-pages": "parcel build ./src/index.html --public-url /kanji-of-the-year/",
+    "deploy": "npm run build:gh-pages && gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/takanakahiko/kanji-of-the-year.git"
+  },
+  "author": "takanakahiko",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/takanakahiko/kanji-of-the-year/issues"
+  },
+  "homepage": "https://github.com/takanakahiko/kanji-of-the-year#readme",
+  "devDependencies": {
+    "gh-pages": "2.0.1",
+    "parcel-bundler": "1.10.3",
+    "typescript": "3.2.2"
+  }
+}

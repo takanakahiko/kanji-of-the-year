@@ -1,0 +1,1 @@
+import "./script/Main.ts";

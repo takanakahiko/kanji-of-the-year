@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="./app.js"></script>
+    <style>
+        body{
+            text-align: center;
+        }
+        canvas{
+            width: 100%;
+            max-width: 500px;
+            margin: 0 auto;
+            display: block;
+            outline:15px solid #FAA;
+        }
+        img{
+            width: 100%;
+            max-width: 500px;
+        }
+        .button {
+            background-color: #4CAF50; /* Green */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+        }
+        p{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>今年の漢字ジェネレータ</h1>
+    <canvas id="canvas" width=500 height=500 ></canvas>
+    <p><img id="ret" width=500 height=500 style="display:none;" ></p>
+    <p>
+        <input type="button" class="button" id="end" value="画像化">
+        <span id="message" style="display:none;">画像化しました！上の画像を保存してよしなに使ってください</span>
+    </p>
+</body>
+</html>
