@@ -56,8 +56,11 @@ const finish = () => {
                 img.style.display = 'inline-block'
                 document.getElementById('end').style.display = 'none'
                 document.getElementById('message').style.display = 'inline'
+                document.getElementById('tweet_button').style.display = 'inline'    
             })
             img.src = canvas.toDataURL('image/png')
+            const imageBase64 = <HTMLInputElement> document.getElementById('imageBase64')
+            imageBase64.value = canvas.toDataURL('image/png')
         })
         drawImg.src = drawData
     })
