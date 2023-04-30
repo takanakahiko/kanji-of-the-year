@@ -24,7 +24,7 @@
   "homepage": "https://github.com/takanakahiko/kanji-of-the-year#readme",
   "devDependencies": {
     "gh-pages": "2.0.1",
-    "parcel-bundler": "1.10.3",
+    "parcel-bundler": "1.12.5",
     "typescript": "3.2.2"
   }
 }
