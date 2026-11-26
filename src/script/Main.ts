@@ -1,7 +1,7 @@
 import {Brush} from "./sub_modules/Brush"
 import { getAdjustedPosition } from "./sub_modules/util"
 
-const backgroundSrc = require('../base.jpg');
+const backgroundSrc = new URL('../base.jpg', import.meta.url).href;
 
 const start = () => {
     const canvas = <HTMLCanvasElement> window.document.getElementById('canvas')
